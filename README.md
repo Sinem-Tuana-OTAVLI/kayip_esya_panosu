@@ -7,7 +7,7 @@ Tanıtım Videoları
 - Hafta 1: https://drive.google.com/file/d/1-37lZi__0Rr2jjUctf4LzMUXLRDE6lVg/view?usp=drive_link
 
 Kullanım
-`index.html` dosyasını tarayıcıda açın.
+`index.html` dosyasını VS Code ve Live Server ile veya tarayıcıdan açın.
 
 Hazırlayan
 Sinem Tuana OTAVLI · 26290785
