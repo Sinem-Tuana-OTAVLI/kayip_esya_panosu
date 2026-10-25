@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Renkler Ankara Üniversitesi logosundan alındı (lacivert ve sarı), bordo eklendi */
+:root {
+    --ana-renk: #084888;
+    --vurgu-renk: #E0C078;
+    --bordo: #7B1E3A;
+    --zemin: #F2F4F7;
+    --metin: #1F2937;
+    --kenar: #D0D5DD;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--metin);
+    background-color: var(--zemin);
+    margin: 0;
+}
+
+main {
+    max-width: 960px;
+    margin: 24px auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+h1, h2 {
+    color: var(--ana-renk);
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+a {
+    color: var(--bordo);
+}
+
+a:hover {
+    color: var(--ana-renk);
+}
+
+.vurgu {
+    color: var(--bordo);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ---------- Üst bölüm ve menü ---------- */
+header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 24px;
+    background-color: var(--ana-renk);
+    border-bottom: 4px solid var(--vurgu-renk);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: white;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.aktif {
+    background-color: var(--vurgu-renk);
+    color: var(--ana-renk);
+}
+
+/* ---------- Ana sayfa: kampüs kutuları ---------- */
+.kampus-listesi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.kampus-listesi li {
+    width: 200px;
+}
+
+.kampus-listesi a {
+    display: block;
+    padding: 24px 16px;
+    border: 2px solid var(--kenar);
+    border-radius: 12px;
+    background-color: var(--zemin);
+    text-align: center;
+    text-decoration: none;
+}
+
+.kampus-listesi a:hover {
+    border-color: var(--bordo);
+    background-color: white;
+}
+
+.kampus-ad {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--ana-renk);
+}
+
+.kampus-alt {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--metin);
+}
+
+/* ---------- Kampüs sayfası: pano bölümleri ---------- */
+.pano {
+    margin-bottom: 32px;
+}
+
+/* ---------- Tablo ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--kenar);
+}
+
+th {
+    background-color: var(--ana-renk);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zemin);
+}
+
+.tablo-kutu {
+    overflow-x: auto;
+}
+
+/* ---------- Buton ---------- */
+button {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--bordo);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--ana-renk);
+    color: white;
+}
+
+/* ---------- Telefon görünümü ---------- */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    main {
+        margin: 12px;
+        padding: 16px;
+    }
+
+    .kampus-listesi li {
+        width: 100%;
+    }
+}
