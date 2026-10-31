@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulunan Eşya İlanını Kaldır - Kayıp Eşya Panosu</title>
+    <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+    <header>
+        <img src="image/au-logo.png" alt="Ankara Üniversitesi logosu" width="64">
+        <h1>Kampüs Kayıp Eşya Panosu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Bulunan Eşya İlanını Kaldır</h2>
+        <p>Eşyanın sahibi bulunduysa ilanı yayınlarken belirlediğiniz 4 haneli kodla kaldırabilirsiniz.</p>
+        <form id="bulunanKaldirFormu">
+            <p>
+                <label for="kampus">Kampüs</label><br>
+                <select id="kampus" name="kampus" required>
+                    <option value="">Kampüs seçin</option>
+                    <option value="tandogan">Tandoğan</option>
+                    <option value="cebeci">Cebeci</option>
+                    <option value="golbasi">Gölbaşı</option>
+                    <option value="diskapi">Dışkapı</option>
+                    <option value="gumusdere">Gümüşdere</option>
+                    <option value="kecioren">Keçiören</option>
+                    <option value="sihhiye">Sıhhiye (DTCF)</option>
+                </select>
+            </p>
+            <p>
+                <label for="ilanNo">İlan no</label><br>
+                <input type="number" id="ilanNo" name="ilanNo" min="1" required>
+            </p>
+            <p>
+                <label for="kod">Kaldırma kodu</label><br>
+                <input type="password" id="kod" name="kod" placeholder="4 haneli sayı" required>
+            </p>
+            <button type="submit">İlanı Kaldır</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Kampüs Kayıp Eşya Panosu &middot; BLM2537</p>
+    </footer>
+</body>
+</html>

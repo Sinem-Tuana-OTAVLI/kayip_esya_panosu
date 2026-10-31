@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıp İlanı Ver - Kayıp Eşya Panosu</title>
+    <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+    <header>
+        <img src="image/au-logo.png" alt="Ankara Üniversitesi logosu" width="64">
+        <h1>Kampüs Kayıp Eşya Panosu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Kayıp İlanı Ver</h2>
+        <p>Kaybettiğiniz eşyayı panoya ekleyin. İlan anonim yayınlanır, kimliğinizi yazmanıza gerek yok.</p>
+        <form id="kayipIlanFormu">
+            <p>
+                <label for="kampus">Kampüs</label><br>
+                <select id="kampus" name="kampus" required>
+                    <option value="">Kampüs seçin</option>
+                    <option value="tandogan">Tandoğan</option>
+                    <option value="cebeci">Cebeci</option>
+                    <option value="golbasi">Gölbaşı</option>
+                    <option value="diskapi">Dışkapı</option>
+                    <option value="gumusdere">Gümüşdere</option>
+                    <option value="kecioren">Keçiören</option>
+                    <option value="sihhiye">Sıhhiye (DTCF)</option>
+                </select>
+            </p>
+            <p>
+                <label for="esyaAdi">Eşya adı</label><br>
+                <input type="text" id="esyaAdi" name="esyaAdi" placeholder="Örn. Siyah cüzdan" required>
+            </p>
+            <p>
+                <label for="yer">Kaybedilen yer</label><br>
+                <input type="text" id="yer" name="yer" placeholder="Örn. Kütüphane" required>
+            </p>
+            <p>
+                <label for="tarih">Kaybedilme tarihi</label><br>
+                <input type="date" id="tarih" name="tarih" required>
+            </p>
+            <p>
+                <label for="aciklama">Açıklama</label><br>
+                <textarea id="aciklama" name="aciklama" rows="3" cols="40"></textarea>
+            </p>
+            <p>
+                <label for="kod">Kaldırma kodu</label><br>
+                <input type="password" id="kod" name="kod" placeholder="4 haneli sayı" required>
+            </p>
+            <p>
+                <label for="kodTekrar">Kodu tekrar girin</label><br>
+                <input type="password" id="kodTekrar" name="kodTekrar" placeholder="4 haneli sayı" required>
+            </p>
+            <p>Bu kodu not alın: ilanı kaldırırken aynı kod gerekecek.</p>
+            <button type="submit">İlanı Yayınla</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Kampüs Kayıp Eşya Panosu &middot; BLM2537</p>
+    </footer>
+</body>
+</html>
