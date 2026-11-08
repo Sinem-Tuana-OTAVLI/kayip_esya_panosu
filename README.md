@@ -7,7 +7,8 @@ Tanıtım Videoları
 - Tüm Haftalar: https://drive.google.com/drive/folders/1m94_Y4WGHNaUhyCy33l24rb8ObsgR7D0?usp=sharing
 - Hafta 1: https://drive.google.com/file/d/1-37lZi__0Rr2jjUctf4LzMUXLRDE6lVg/view?usp=drive_link
 - Hafta 2: https://drive.google.com/file/d/1404qCclpy1N53ZwhsOHxiTtZQVrT-sjB/view?usp=sharing
-
+- Hafta 3: https://drive.google.com/file/d/1Pc7p6-kv4Z0nJPGnhDV84nB7EhFIb81_/view?usp=sharing
+  
 Kullanım
 `index.html` dosyasını VS Code ve Live Server ile veya tarayıcıdan açın.
 
