@@ -8,6 +8,7 @@ Tanıtım Videoları
 - Hafta 1: https://drive.google.com/file/d/1-37lZi__0Rr2jjUctf4LzMUXLRDE6lVg/view?usp=drive_link
 - Hafta 2: https://drive.google.com/file/d/1404qCclpy1N53ZwhsOHxiTtZQVrT-sjB/view?usp=sharing
 - Hafta 3: https://drive.google.com/file/d/1Pc7p6-kv4Z0nJPGnhDV84nB7EhFIb81_/view?usp=sharing
+- Hafta 4: https://drive.google.com/file/d/1wIfUV_S2hcNusCoVVsNP1h3to2JK8VDp/view?usp=sharing
   
 Kullanım
 `index.html` dosyasını VS Code ve Live Server ile veya tarayıcıdan açın.
